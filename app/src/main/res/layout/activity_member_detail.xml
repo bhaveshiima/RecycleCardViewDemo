@@ -6,5 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MemberDetailActivity">
 
+<!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/RV_MemberDetail"
+        tools:ignore="MissingConstraints" />
+-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="IIM Detail will display here"
+        android:gravity="center"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
