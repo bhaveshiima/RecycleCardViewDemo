@@ -3,6 +3,7 @@ package vsl.bhavesh.recyclecardviewdemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_member_detail.*
 import retrofit2.Call
 import retrofit2.Response
@@ -24,10 +25,10 @@ class MemberDetailActivity : AppCompatActivity() {
         setTitle(text);
         // Get paramenter from precious activity and set the title accodring [ END ]
 
-
+        // set Dynamic sub URL
        // var MEMBERDETAIL_API = "testapi/memberinfo1/"+ iimID + ".html"
 
-        /*
+
         // Set Layout Manager Object
         var MDlManager = LinearLayoutManager(this@MemberDetailActivity,LinearLayoutManager.VERTICAL,false)
         RV_MemberDetail.layoutManager = MDlManager
@@ -57,7 +58,7 @@ class MemberDetailActivity : AppCompatActivity() {
         })
 
 
-        */
+
 
 
     }

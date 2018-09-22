@@ -16,31 +16,32 @@ class MemberDetailAdapter(var memberDetailActivity: MemberDetailActivity,
     }
 
     override fun getItemCount(): Int {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return 1
     }
 
     override fun onBindViewHolder(holder: MemberDetailHolder, position: Int) {
 
         holder.iim_home_name!!.text = memberdetail_pojo!!.iimHomeName
         holder.iim_title!!.text = memberdetail_pojo!!.iimTitle
-
-        holder.iim_home_name!!.text = memberdetail_pojo!!.iimAddress
+        holder.iim_home_name!!.text = memberdetail_pojo!!.iimHomeName
         holder.iim_description!!.text = memberdetail_pojo!!.iimDescription
-
-        holder.iim_short_code!!.text = memberdetail_pojo!!.iimShortCode
+        holder.iim_address!!.text = memberdetail_pojo!!.iimAddress
         holder.established_year!!.text = memberdetail_pojo!!.establishedYear
-        holder.fpm_prog!!.text = memberdetail_pojo!!.fpmProg
 
         holder.director_name!!.text = memberdetail_pojo!!.directorName
-        holder.librarian_contact!!.text = memberdetail_pojo!!.librarianContact
         holder.librarian_designation!!.text = memberdetail_pojo!!.librarianDesignation
         holder.librarian_name!!.text = memberdetail_pojo!!.librarianName
 
+/*
+        holder.iim_short_code!!.text = memberdetail_pojo!!.iimShortCode
+        holder.fpm_prog!!.text = memberdetail_pojo!!.fpmProg
+
+        holder.librarian_contact!!.text = memberdetail_pojo!!.librarianContact
         holder.iim_website_url!!.text = memberdetail_pojo!!.iimWebsiteUrl
         holder.library_ir_url!!.text = memberdetail_pojo!!.libraryIrUrl
         holder.library_opac_url!!.text = memberdetail_pojo!!.libraryOpacUrl
         holder.library_website_url!!.text = memberdetail_pojo!!.libraryWebsiteUrl
-
+*/
         // set IIM Logo Image [ START ]
         var logoURL = ""
         if(memberdetail_pojo!!.iimLogo == ""){

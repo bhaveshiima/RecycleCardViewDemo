@@ -10,6 +10,9 @@ interface MemberDetailAPI {
     //Define sub URL Dynamically
     //@GET(value = MEMBERDETAIL_API)
 
-    @GET(value = "testapi/memberinfo1/1.html")
+
+
+
+    @GET(value = "testapi/memberinfo1/2.html")
     fun getMemberDetail():Call<MemberDetailPOJO>
 }

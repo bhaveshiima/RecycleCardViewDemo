@@ -23,31 +23,38 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4"
+                android:backgroundTint="@color/colorPrimary"
                 android:orientation="vertical">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:id="@+id/iim_logo"
+                        android:padding="10dp"
                         android:src="@mipmap/ic_launcher_round"
                         android:layout_gravity="top"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="#8888"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
                         android:id="@+id/iim_home_name"
                         />
-
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="0.7"
-                android:orientation="vertical">
+                android:layout_weight="0.6"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -82,6 +89,16 @@
                     android:textColor="#000888"
                     android:textStyle="bold"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/librarian_designation"
+                    android:textSize="13sp"
+                    android:textColor="#000888"
+                    android:textStyle="bold"/>
+
+
+
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,9 +107,6 @@
                     android:textSize="13sp"
                     android:textColor="#000888"
                     android:textStyle="bold"/>
-
-
-
 
 
                 <TextView
@@ -110,14 +124,37 @@
 
         </LinearLayout>
 
-        <TextView
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="0.6"
-            android:id="@+id/iim_description"
-            />
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="About IIM:"
+                android:textColor="#123"
+                android:scrollbars="vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:id="@+id/iim_description"
+                android:textColor="#123"
+                android:scrollbars="vertical"
+                />
+
+          
 
 
+        </LinearLayout>
 
     </LinearLayout>
 

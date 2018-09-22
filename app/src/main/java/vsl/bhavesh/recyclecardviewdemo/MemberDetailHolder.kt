@@ -32,13 +32,22 @@ class MemberDetailHolder(itemView: View) :
     var cardMember: CardView? = null
 
 
+
+
     // all the component into init block [ START ]
     init {
         iim_logo = itemView.iim_logo
         iim_home_name = itemView.iim_home_name
         iim_title = itemView.iim_title
-        director_name = itemView.director_name
         established_year = itemView.established_year
+        iim_address = itemView.iim_address
+        iim_description = itemView.iim_description
+
+        director_name = itemView.director_name
+        librarian_name = itemView.librarian_name
+        librarian_designation = itemView.librarian_designation
+
+
         cardMember = itemView.cardMemberDetail
     }
     // all the component into init block [ END ]

@@ -36,37 +36,25 @@ class IIMMemberAdapter(var mainActivity: MainActivity,
         p0.director_name!!.text = iimmember.directorName
         p0.established_year!!.text = iimmember.establishedYear
 
-        //now for Image
-        var logo_url = ""
-        if(iimmember.iimLogo == ""){
-            var logo_url = main_iimmember_pojo.noImageURL
-        }else{
-            var logo_url = main_iimmember_pojo.iIMPhotoURL + iimmember.iimLogo
-        }
+      
 
-        // Glide will load on Image View componenet
-        Glide.with(mainActivity).load(logo_url).into(p0.iim_logo!!)
+        // set IIM Logo Image [ START ]
+        var logoURL = ""
+        if(iimmember!!.iimLogo == ""){
+            logoURL = main_iimmember_pojo!!.noImageURL
+        }else{
+            logoURL = main_iimmember_pojo!!.iIMPhotoURL+iimmember!!.iimLogo
+        }
+        Glide.with(mainActivity).load(logoURL).into(p0.iim_logo!!)
+        // set IIM Logo Image [ END ]
+
+
+
+
+
 
         // set Onclick Listner
         p0.cardMember!!.setOnClickListener {
-
-            /*
-
-               **********************
-                val intent = Intent(this@MainActivity,SecondActivity::class.java);
-                var userName = username.textø
-                var password = password_field.text
-                intent.putExtra("Username", userName)
-                intent.putExtra("Password", password)
-                startActivity(intent);
-                *******************
-
-
-                var i = Intent()
-                i.action = Intent.ACTION_VIEW
-                i.setData(Uri.parse("http://bhaveshpatel.in/testapi/memberinfo1/1.html"))
-                mainActivity.startActivity(i)
-            */
 
             // Display click IIM Name in Toast Message
             val iimHomeName = iimmember.iimHomeName
@@ -81,9 +69,6 @@ class IIMMemberAdapter(var mainActivity: MainActivity,
             i.putExtra("iimID", iimID)
             i.putExtra("iimHomeName", iimHomeName)
             mainActivity.startActivity(i)
-
-
-
 
 
         }
