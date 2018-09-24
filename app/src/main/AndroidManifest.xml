@@ -18,7 +18,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MemberDetailActivity"></activity>
+        <activity android:name=".MemberDetailActivity" />
+        <activity android:name=".MemberWebViewActivity"></activity>
     </application>
 
 </manifest>

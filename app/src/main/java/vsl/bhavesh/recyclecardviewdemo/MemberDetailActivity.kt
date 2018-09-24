@@ -22,7 +22,7 @@ class MemberDetailActivity : AppCompatActivity() {
         var iimID: String = intent.getStringExtra("iimID")
         var iimHomeName: String = intent.getStringExtra("iimHomeName")
         val text = iimHomeName + "("+ iimID +")"
-        setTitle(text);
+        setTitle(text); // set the title based on the selection of IIM
         // Get paramenter from precious activity and set the title accodring [ END ]
 
         // set Dynamic sub URL

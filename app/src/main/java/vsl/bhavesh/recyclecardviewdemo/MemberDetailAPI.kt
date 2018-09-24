@@ -11,8 +11,6 @@ interface MemberDetailAPI {
     //@GET(value = MEMBERDETAIL_API)
 
 
-
-
     @GET(value = "testapi/memberinfo1/2.html")
     fun getMemberDetail():Call<MemberDetailPOJO>
 }

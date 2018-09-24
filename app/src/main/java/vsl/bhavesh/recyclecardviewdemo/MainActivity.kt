@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         // Make a HTTTP request using enqueue
         call.enqueue(object : Callback<IIMMemberPOJO> {
             override fun onFailure(call: Call<IIMMemberPOJO>?, t: Throwable?) {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+                // Write the code for failure
             }
 
             override fun onResponse(call: Call<IIMMemberPOJO>?,

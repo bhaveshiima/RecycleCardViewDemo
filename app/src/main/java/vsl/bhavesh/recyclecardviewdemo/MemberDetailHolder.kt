@@ -19,10 +19,13 @@ class MemberDetailHolder(itemView: View) :
     var iim_short_code: TextView? = null
     var iim_address: TextView? = null
     var iim_description: TextView? = null
-    var iim_website_url: TextView? = null
-    var library_website_url: TextView? = null
-    var library_opac_url: TextView? = null
-    var library_ir_url: TextView? = null
+    //var iim_website_url: TextView? = null
+
+    var iim_website_url: ImageView? = null
+    var library_website_url: ImageView? =null
+    var library_opac_url: ImageView? = null
+    var library_ir_url: ImageView? = null
+
     var librarian_name: TextView? = null
     var librarian_designation: TextView? = null
     var librarian_email: TextView? = null
@@ -43,9 +46,16 @@ class MemberDetailHolder(itemView: View) :
         iim_address = itemView.iim_address
         iim_description = itemView.iim_description
 
+        iim_website_url = itemView.iim_website_url
+        library_website_url = itemView.library_website_url
+        library_ir_url = itemView.library_ir_url
+        library_opac_url = itemView.library_opac_url
+
         director_name = itemView.director_name
         librarian_name = itemView.librarian_name
         librarian_designation = itemView.librarian_designation
+
+
 
 
         cardMember = itemView.cardMemberDetail
